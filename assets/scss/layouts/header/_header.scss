@@ -150,9 +150,7 @@
     margin-left: auto;
     margin-right: auto;
     overflow: hidden;
-    text-overflow: ellipsis;
     text-transform: uppercase;
-    white-space: nowrap;
 
     @include breakpoint("small") {
         font-size: $fontSize-logo-medium;
@@ -171,6 +169,25 @@
         }
     }
 }
+
+.header-logo-text-mobile {
+
+    display: none;
+    font-family: $fontFamily-hero;
+    font-size: $fontSize-logo-small;   // 1
+    font-weight: stencilFontWeight("headings-font");
+    letter-spacing: remCalc(2px);
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    text-transform: uppercase;
+
+}
+
+@media (max-width: 640px) {
+      .header-logo-text { display: none}
+      .header-logo-text-mobile { display: block;}
+    }
 
 .header-logo-image-container {
     position: relative;
