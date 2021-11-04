@@ -68,12 +68,12 @@
 .card-image {
     @include lazy-loaded-img;
     border: 0;
-    box-shadow: 2px 3px 20px 2px rgba(0, 0, 0, .2);
+    box-shadow: 1px 2px 5px 1px rgba(128, 128, 128, .2);
     /* Object-fit polyfill */
     font-family: "object-fit: contain;";
-    height: 225px;
-    object-fit: contain;
-    max-width: 225px;
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
 }
 
 .card-title {
